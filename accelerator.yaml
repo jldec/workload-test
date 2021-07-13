@@ -3,7 +3,7 @@ accelerator:
   displayName: Workload YAML
   description: Tanzu Application Platform Workload YAML
   iconUrl: https://raw.githubusercontent.com/simple-starters/icons/master/icon-tanzu-light.png
-  tags: 1
+  tags:
     - tanzu
     - awesome
   options:
