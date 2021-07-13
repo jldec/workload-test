@@ -1,3 +1,4 @@
+#@ load("@ytt:data", "data")
 apiVersion: experimental.kontinue.io/v1
 kind: Workload
 metadata:
