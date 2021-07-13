@@ -20,4 +20,6 @@ accelerator:
       defaultValue: main
 
 engine:
-  type: YTT
+  include: ["config/*.yaml"]
+  merge:
+  - type: YTT

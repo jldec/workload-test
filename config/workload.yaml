@@ -8,7 +8,6 @@ metadata:
     app.tanzu.vmware.com/workload-type: web
 spec:
   git:
-    #! update when code is pushed to a new location
     url: #@ data.values.url
     ref:
       branch: #@ data.values.branch
