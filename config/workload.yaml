@@ -1,0 +1,23 @@
+apiVersion: experimental.kontinue.io/v1
+kind: Workload
+metadata:
+  name: #@ data.values.name
+  labels:
+    app.kubernetes.io/name: #@ data.values.name
+    app.tanzu.vmware.com/workload-type: web
+spec:
+  git:
+    # update when code is pushed to a new location
+    url: #@ data.values.url
+    ref:
+      branch: #@ data.values.branch
+  env:
+  - name: SPRING_PROFILES_ACTIVE
+    value: mysql
+  resources:
+    requests:
+      memory: 1Gi
+      cpu: 100m
+    limits:
+      memory: 1Gi
+      cpu: 4000m

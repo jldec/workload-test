@@ -1,0 +1,24 @@
+#@ load("@ytt:data", "data")
+accelerator:
+  displayName: Workload YAML
+  description: Tanzu Application Platform Workload YAML
+  iconUrl: https://raw.githubusercontent.com/simple-starters/icons/master/icon-tanzu-light.png
+  tags: 1
+    - tanzu
+    - awesome
+  options:
+    - name: name
+      label: K8s resource name
+      required: true
+
+    - name: url
+      label: Git Repository URL
+      required: true
+
+    - name: branch
+      label: Git Branch
+      required: true
+      defaultValue: main
+
+engine:
+  type: YTT
